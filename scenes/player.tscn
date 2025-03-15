@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://cifbqyxcchaid"]
+
+[ext_resource type="Script" uid="uid://lkmax3kmxjh7" path="res://scripts/player.gd" id="1_3vyb7"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_u8vuu"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3vyb7"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_3vyb7"]
+
+[node name="Player" type="CharacterBody2D"]
+motion_mode = 1
+script = ExtResource("1_3vyb7")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(39.3354, -42.6814)
+texture = SubResource("PlaceholderTexture2D_u8vuu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(2.31278, 2.31278)
+shape = SubResource("CircleShape2D_3vyb7")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+visible = false
+enabled = false
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+texture = SubResource("PlaceholderTexture2D_3vyb7")
+
+[node name="Trajectory" type="Line2D" parent="."]
+
+[connection signal="mouse_entered" from="TextureRect" to="." method="_on_texture_rect_mouse_entered"]
+[connection signal="mouse_exited" from="TextureRect" to="." method="_on_texture_rect_mouse_exited"]
