@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bbcp0160hb4xq"]
+
+[ext_resource type="Script" uid="uid://c50poubl4fk42" path="res://scripts/sounds.gd" id="1_aevjb"]
+
+[node name="Sounds" type="Node"]
+script = ExtResource("1_aevjb")
+
+[node name="BackMusic" type="AudioStreamPlayer" parent="."]
