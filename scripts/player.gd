@@ -18,7 +18,7 @@ func _physics_process(delta: float) -> void:
 	# Pegar a distancia e o angulo do mouse
 	var mousePosition = get_global_mouse_position();
 	var myPosition = global_position;
-	
+		
 	var distanceToMouse: float = (abs(mousePosition - myPosition)).length()
 	#print("Distancia para o mouse: " + str(distanceToMouse))
 	

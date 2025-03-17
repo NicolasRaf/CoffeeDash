@@ -1,0 +1,48 @@
+[gd_scene load_steps=5 format=3 uid="uid://dpn4wknjvv3ax"]
+
+[ext_resource type="Script" uid="uid://b11ai12g0abnm" path="res://scripts/transition_out.gd" id="1_yaewu"]
+[ext_resource type="Texture2D" uid="uid://dtutg552twhel" path="res://assets/UI/coffeeSprite.png" id="2_vn6hw"]
+
+[sub_resource type="Curve" id="Curve_6tco1"]
+_limits = [-200.0, 200.0, 0.0, 1.0]
+_data = [Vector2(0, -24.1245), 0.0, 0.0, 0, 0, Vector2(1, 200), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="Curve" id="Curve_wm7go"]
+_limits = [-360.0, 360.0, 0.0, 1.0]
+_data = [Vector2(0.00390625, -360), 0.0, 0.0, 0, 0, Vector2(1, 360), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[node name="TrasitionOut" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_yaewu")
+
+[node name="ParticlesCoffee" type="CPUParticles2D" parent="."]
+position = Vector2(305, -33)
+emitting = false
+amount = 300
+texture = ExtResource("2_vn6hw")
+lifetime = 1.2
+speed_scale = 0.6
+emission_shape = 3
+emission_rect_extents = Vector2(400, 0)
+linear_accel_curve = SubResource("Curve_6tco1")
+angle_min = -1.0
+angle_max = 1.0
+angle_curve = SubResource("Curve_wm7go")
+scale_amount_min = 0.4
+scale_amount_max = 0.4
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.388235, 0.27451, 0.0705882, 0)

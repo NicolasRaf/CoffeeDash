@@ -1,0 +1,22 @@
+[gd_resource type="Theme" load_steps=7 format=3 uid="uid://cu2qx6gk2hspu"]
+
+[ext_resource type="FontFile" uid="uid://c7thr4xg4jq73" path="res://assets/fonts/04b_30/04B_30__.TTF" id="1_7rlkt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dilca"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uy02u"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hmhd4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7tfnc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7rlkt"]
+
+[resource]
+Button/font_sizes/font_size = 15
+Button/fonts/font = ExtResource("1_7rlkt")
+Button/styles/disabled = SubResource("StyleBoxEmpty_dilca")
+Button/styles/focus = SubResource("StyleBoxEmpty_uy02u")
+Button/styles/hover = SubResource("StyleBoxEmpty_hmhd4")
+Button/styles/normal = SubResource("StyleBoxEmpty_7tfnc")
+Button/styles/pressed = SubResource("StyleBoxEmpty_7rlkt")
