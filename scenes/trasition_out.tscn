@@ -29,16 +29,16 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.388235, 0.27451, 0.0705882, 0)
+color = Color(0.631373, 0.509804, 0.384314, 0)
 
 [node name="ParticlesCoffee" type="CPUParticles2D" parent="."]
 position = Vector2(305, -33)
 emitting = false
-amount = 300
+amount = 100
 texture = ExtResource("2_vn6hw")
 lifetime = 1.2
 one_shot = true
-speed_scale = 0.6
+randomness = 1.0
 emission_shape = 3
 emission_rect_extents = Vector2(400, 0)
 linear_accel_curve = SubResource("Curve_6tco1")

@@ -30,21 +30,20 @@ offset_right = 640.0
 offset_bottom = 374.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.386445, 0.274482, 0.0702886, 1)
+color = Color(0.631373, 0.509804, 0.384314, 1)
 
 [node name="ParticlesCoffee" type="CPUParticles2D" parent="."]
 z_index = 2
 position = Vector2(308.169, 375)
 emitting = false
-amount = 300
+amount = 100
 texture = ExtResource("1_p65pd")
 lifetime = 1.2
 one_shot = true
-speed_scale = 0.6
 emission_shape = 3
 emission_rect_extents = Vector2(400, 0)
 direction = Vector2(0, 10)
-gravity = Vector2(0, -980)
+gravity = Vector2(0, -1200)
 linear_accel_curve = SubResource("Curve_6tco1")
 angle_min = -1.0
 angle_max = 1.0

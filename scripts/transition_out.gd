@@ -9,7 +9,7 @@ func _ready():
 
 	$ParticlesCoffee.emitting = true;
 	$ParticlesCoffee.finished.connect(changeScene);
-	_tween.tween_property(fade, "color:a", 1, 3);
+	_tween.tween_property(fade, "color:a", 1, 2).set_trans(Tween.TRANS_SINE);
 
 func changeScene() -> void:
 	var instScene = destinyScene.instantiate();
