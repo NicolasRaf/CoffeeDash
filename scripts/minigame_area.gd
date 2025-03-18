@@ -1,15 +1,20 @@
 extends Node2D
 
-
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if body is Player:
-		print("Pinto pelado preto confuso n sei dirigir");
+		print("Pinto pelado preto confuso n sei dirigir")
 		var minigameScene = preload("res://scenes/test/minigame_window.tscn")
-		var minigame = minigameScene.instantiate();
+		var minigame = minigameScene.instantiate()
 		
-		# Window center position
-		var windowOffsetX = get_window().get_viewport().size.x/2 - minigame.size.x
-		var windowOffsetY = get_window().get_viewport().size.y/2 - minigame.size.y
+		# Pegando a janela principal
+		var window = get_window()
 		
-		minigame.global_position = Vector2(windowOffsetX, windowOffsetY);
+		# Calculando a posição central para a janela do minigame
+		var windowOffsetX = (window.size.x / 2) - (minigame.size.x / 2)
+		var windowOffsetY = (window.size.y / 2) - (minigame.size.y / 2)
+		
+		# Definindo a posição correta da janela do minigame
+		minigame.global_position = Vector2(windowOffsetX, windowOffsetY)
+		
+		# Adicionando o minigame à cena atual
 		get_tree().current_scene.add_child(minigame)
