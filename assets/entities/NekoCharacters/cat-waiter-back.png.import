@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bpr4x73uwt1uk"
-path="res://.godot/imported/cat-black-front.png-f8af4df7a18edfe8fbfd75d2fba93a69.ctex"
+uid="uid://ccdtqi0axylqj"
+path="res://.godot/imported/cat-waiter-back.png-8b8f3e7eb2fba54fbe8304ae5bde8227.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tilesets/Neko Cafe Asset Pack/Characters/cat-black-front.png"
-dest_files=["res://.godot/imported/cat-black-front.png-f8af4df7a18edfe8fbfd75d2fba93a69.ctex"]
+source_file="res://assets/entities/NekoCharacters/cat-waiter-back.png"
+dest_files=["res://.godot/imported/cat-waiter-back.png-8b8f3e7eb2fba54fbe8304ae5bde8227.ctex"]
 
 [params]
 

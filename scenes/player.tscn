@@ -13,12 +13,12 @@ script = ExtResource("1_3vyb7")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, -2)
-scale = Vector2(0.2, 0.2)
+scale = Vector2(2, 2)
 texture = ExtResource("2_g2els")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -1)
-scale = Vector2(2.31278, 2.31278)
+scale = Vector2(2.96694, 2.96694)
 shape = SubResource("CircleShape2D_3vyb7")
 
 [node name="TextureRect" type="TextureRect" parent="."]
@@ -29,6 +29,7 @@ offset_bottom = 15.0
 
 [node name="Trajectory" type="Line2D" parent="."]
 width = 5.0
+end_cap_mode = 2
 
 [connection signal="mouse_entered" from="TextureRect" to="." method="_on_texture_rect_mouse_entered"]
 [connection signal="mouse_exited" from="TextureRect" to="." method="_on_texture_rect_mouse_exited"]

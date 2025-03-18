@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://da7arn7fsoxou"
-path="res://.godot/imported/cat-black-side.png-9a0ac0167972d04ee58656d45aa4c9bd.ctex"
+uid="uid://bpr4x73uwt1uk"
+path="res://.godot/imported/cat-black-front.png-2cb9f361753fd4c92ba376e7c8d4fafc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tilesets/Neko Cafe Asset Pack/Characters/cat-black-side.png"
-dest_files=["res://.godot/imported/cat-black-side.png-9a0ac0167972d04ee58656d45aa4c9bd.ctex"]
+source_file="res://assets/entities/NekoCharacters/cat-black-front.png"
+dest_files=["res://.godot/imported/cat-black-front.png-2cb9f361753fd4c92ba376e7c8d4fafc.ctex"]
 
 [params]
 
