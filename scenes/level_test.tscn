@@ -1,8 +1,45 @@
-[gd_scene load_steps=2 format=3 uid="uid://blb3o5x0vtts1"]
+[gd_scene load_steps=5 format=3 uid="uid://blb3o5x0vtts1"]
 
 [ext_resource type="PackedScene" uid="uid://cifbqyxcchaid" path="res://scenes/player.tscn" id="1_e73ws"]
+[ext_resource type="PackedScene" uid="uid://doyyb6kd7oclu" path="res://scenes/test/minigame_area.tscn" id="2_vbogn"]
+[ext_resource type="PackedScene" uid="uid://dfw3vk2reltu5" path="res://scenes/test/minigame_window.tscn" id="3_d5kir"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e73ws"]
+size = Vector2(43, 87)
 
 [node name="LevelTest" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_e73ws")]
 position = Vector2(326, 183)
+
+[node name="Obstacle" type="StaticBody2D" parent="."]
+position = Vector2(101, 278)
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacle"]
+position = Vector2(11.5, -33.5)
+shape = SubResource("RectangleShape2D_e73ws")
+
+[node name="Obstacle2" type="StaticBody2D" parent="."]
+position = Vector2(508, 167)
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacle2"]
+position = Vector2(11.5, -33.5)
+shape = SubResource("RectangleShape2D_e73ws")
+
+[node name="MinigameArea" parent="." instance=ExtResource("2_vbogn")]
+position = Vector2(221, 40)
+
+[node name="MinigameWindow" parent="." instance=ExtResource("3_d5kir")]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 276.0
+offset_top = 201.0
+offset_right = 316.0
+offset_bottom = 241.0
+grow_horizontal = 2
+grow_vertical = 2

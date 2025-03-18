@@ -27,6 +27,7 @@ func _physics_process(delta: float) -> void:
 	var reversedAngleToMouseRad: float = deg_to_rad(reversedAngleToMouse);
 	if (holdingPlayer):
 		trajectory.show();
+		rotation_degrees = reversedAngleToMouse;
 		_update_trajectory(delta, (mousePosition-myPosition))
 		
 	if (Input.is_action_just_released("hold")):

@@ -5,12 +5,11 @@ const _scenesBase : Dictionary[String, PackedScene] = {
 	"test": preload("res://scenes/level_test.tscn")
 };
 
-func transitonToScene(destiny) -> void:
+func transitonToScene(destiny: String) -> void:
 	if not _scenesBase.has(destiny):  return;
-	
 	var destinyScene : PackedScene = _scenesBase[destiny];
 	
-	var trans = _scenesBase["transition"].instantiate();
-	trans.scene = destinyScene;
+	var trans: Control = _scenesBase["transition"].instantiate();
+	trans.destinyScene = destinyScene;
 	
 	get_tree().root.add_child(trans);

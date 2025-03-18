@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dfw3vk2reltu5"]
+
+[node name="MinigameWindow" type="Panel"]
+offset_right = 40.0
+offset_bottom = 40.0
+pivot_offset = Vector2(20, 20)
+size_flags_horizontal = 4
+size_flags_vertical = 4

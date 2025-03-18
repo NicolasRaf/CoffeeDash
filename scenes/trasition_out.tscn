@@ -22,12 +22,22 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_yaewu")
 
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.388235, 0.27451, 0.0705882, 0)
+
 [node name="ParticlesCoffee" type="CPUParticles2D" parent="."]
 position = Vector2(305, -33)
 emitting = false
 amount = 300
 texture = ExtResource("2_vn6hw")
 lifetime = 1.2
+one_shot = true
 speed_scale = 0.6
 emission_shape = 3
 emission_rect_extents = Vector2(400, 0)
@@ -37,12 +47,3 @@ angle_max = 1.0
 angle_curve = SubResource("Curve_wm7go")
 scale_amount_min = 0.4
 scale_amount_max = 0.4
-
-[node name="ColorRect" type="ColorRect" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0.388235, 0.27451, 0.0705882, 0)
