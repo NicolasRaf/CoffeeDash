@@ -49,15 +49,24 @@ func _manage_hold():
 			print("segurando");
 			holdingPlayer = true;
 
-func movement_foreshadow (
+func movement_foreshadow(
 	_angleToFace: float,
 	_playerPos: Vector2, 
 	_mousePos: Vector2, 
 	delta: float) -> void:
-	if (holdingPlayer):
-		trajectory.show();
-		rotation_degrees = _angleToFace;
+
+	if holdingPlayer:
+		trajectory.show()
+		rotation_degrees = _angleToFace  
+
+		
+		if abs(rotation_degrees) > 90:
+			$Sprite2D.scale.y = -2.0  
+		else:
+			$Sprite2D.scale.y = 2.0  
+
 		_update_trajectory(delta, (_mousePos - _playerPos))
+
 	
 	
 
