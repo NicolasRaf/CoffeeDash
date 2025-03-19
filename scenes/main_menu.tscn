@@ -8,9 +8,8 @@ layout_mode = 3
 anchors_preset = 0
 
 [node name="Background" type="Sprite2D" parent="."]
-modulate = Color(0.721859, 0.721859, 0.721859, 1)
-position = Vector2(319.75, 179.5)
-scale = Vector2(1.01823, 1.00278)
+position = Vector2(320.25, 180.5)
+scale = Vector2(1.01664, 1.00278)
 texture = ExtResource("1_l6cm7")
 
 [node name="Buttons" type="Control" parent="."]
