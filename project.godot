@@ -26,7 +26,10 @@ Global="*res://scripts/Global.gd"
 
 window/size/viewport_width=640
 window/size/viewport_height=360
-window/stretch/mode="viewport"
+window/size/mode=3
+window/stretch/mode="canvas_items"
+window/stretch/aspect="keep_width"
+mouse_cursor/custom_image="uid://c37qtb3pcnuhu"
 
 [file_customization]
 
@@ -54,3 +57,5 @@ hold={
 textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+textures/size/viewport_height=360
+textures/size/viewport_width=1152

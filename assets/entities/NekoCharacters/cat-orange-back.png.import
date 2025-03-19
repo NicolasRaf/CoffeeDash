@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dk065q8lo0e2v"
-path="res://.godot/imported/cat-orange-back.png-d99ff4f53495a11926bc59f0dbf203e1.ctex"
+path="res://.godot/imported/cat-orange-back.png-d19648cabea8be1bfcc363a9f6bccfab.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tilesets/Neko Cafe Asset Pack/Characters/cat-orange-back.png"
-dest_files=["res://.godot/imported/cat-orange-back.png-d99ff4f53495a11926bc59f0dbf203e1.ctex"]
+source_file="res://assets/entities/NekoCharacters/cat-orange-back.png"
+dest_files=["res://.godot/imported/cat-orange-back.png-d19648cabea8be1bfcc363a9f6bccfab.ctex"]
 
 [params]
 
