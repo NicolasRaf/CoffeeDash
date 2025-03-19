@@ -1,8 +1,22 @@
-[gd_scene format=3 uid="uid://dfw3vk2reltu5"]
+[gd_scene load_steps=2 format=3 uid="uid://dfw3vk2reltu5"]
+
+[ext_resource type="Script" uid="uid://xprspyc1fnnd" path="res://scripts/minigames/base_minigame.gd" id="1_lny4x"]
 
 [node name="MinigameWindow" type="Panel"]
-offset_right = 40.0
-offset_bottom = 40.0
-pivot_offset = Vector2(20, 20)
+offset_right = 500.0
+offset_bottom = 360.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
+script = ExtResource("1_lny4x")
+
+[node name="CloseButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 40.0
+grow_horizontal = 0
+text = "X"
+
+[connection signal="pressed" from="CloseButton" to="." method="_on_close_button_pressed"]

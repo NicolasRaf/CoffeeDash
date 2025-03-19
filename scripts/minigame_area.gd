@@ -1,13 +1,15 @@
 extends Node2D
 
+@export var minigameScene: PackedScene;
+
 func _on_area_2d_body_entered(body: Node2D) -> void:
-	if body is Player:
+	if body is Player and not body.isDoingMinigame:
+		body.isDoingMinigame = true;
 		print("Pinto pelado preto confuso n sei dirigir");
-		var minigameScene = preload("res://scenes/test/minigame_window.tscn");
-		var minigame = minigameScene.instantiate();
+		var minigame: BaseMinigame = minigameScene.instantiate();
 		
 		# Pegando a janela principal
-		var window = get_window();
+		var window = get_viewport_rect();
 		
 		# Calculando a posição central para a janela do minigame
 		var windowOffsetX = (window.size.x / 2) - (minigame.size.x / 2);
