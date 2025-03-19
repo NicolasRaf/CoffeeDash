@@ -1,0 +1,34 @@
+[gd_scene load_steps=3 format=3 uid="uid://chea406qctv80"]
+
+[ext_resource type="Script" uid="uid://d1rqqpxrgsvvw" path="res://scripts/minigames/coffe_making_minigame.gd" id="1_o7e4e"]
+[ext_resource type="Texture2D" uid="uid://dtutg552twhel" path="res://assets/UI/coffeeSprite.png" id="2_vhrwe"]
+
+[node name="coffe_making_minigame" type="Node2D"]
+script = ExtResource("1_o7e4e")
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+color = Color(0.54902, 0, 0, 1)
+polygon = PackedVector2Array(18, 13, 73, 13, 74, 49, 18, 50)
+
+[node name="Polygon2D2" type="Polygon2D" parent="."]
+position = Vector2(73, 30)
+color = Color(0.999988, 0.917969, 0.903914, 1)
+offset = Vector2(-17.615, -28.78)
+polygon = PackedVector2Array(17.615, 25.78, 46.615, 24.78, 62.615, 24.78, 74.615, 23.78, 72.615, 34.78, 17.615, 35.78)
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+position = Vector2(47, 50)
+amount = 13
+lifetime = 0.29
+emission_shape = 3
+emission_rect_extents = Vector2(2.245, 1.04)
+scale_amount_min = 2.0
+scale_amount_max = 2.0
+color = Color(0.430415, 0.172219, 0.0995138, 1)
+
+[node name="CoffeeSprite" type="Sprite2D" parent="."]
+z_index = -1
+y_sort_enabled = true
+position = Vector2(48, 97)
+scale = Vector2(0.377778, 0.377778)
+texture = ExtResource("2_vhrwe")
