@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://lvx43vqgo5qw"]
+
+[ext_resource type="Theme" uid="uid://cuho8y2ltt5tm" path="res://assets/themes/minigame_button.tres" id="1_wcge5"]
+[ext_resource type="Texture2D" uid="uid://crnkvhy13enq0" path="res://assets/tilesets/Neko Cafe Asset Pack/neko-cafe-food.png" id="2_8rsh8"]
+
+[node name="CoffeeButton" type="Button"]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -580.0
+offset_bottom = -300.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_wcge5")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Sprite" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(30, 30)
+scale = Vector2(1.99895, 1.99895)
+texture = ExtResource("2_8rsh8")
+region_enabled = true
+region_rect = Rect2(17, 2, 14, 12)

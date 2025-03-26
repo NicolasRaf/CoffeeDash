@@ -11,10 +11,10 @@ func _ready() -> void:
 	pass;
 
 func _physics_process(delta: float) -> void:
-	pass
+	pass;
 	
 func _on_minigame_completion() -> void:
-	pass
+	pass;
 
 func _on_close_button_pressed() -> void:
 	var player: Player = get_tree().current_scene.get_node("Player")
