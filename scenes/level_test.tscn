@@ -1,10 +1,24 @@
-[gd_scene load_steps=4 format=3 uid="uid://blb3o5x0vtts1"]
+[gd_scene load_steps=6 format=3 uid="uid://blb3o5x0vtts1"]
 
 [ext_resource type="PackedScene" uid="uid://cifbqyxcchaid" path="res://scenes/player.tscn" id="1_e73ws"]
 [ext_resource type="PackedScene" uid="uid://doyyb6kd7oclu" path="res://scenes/test/minigame_area.tscn" id="2_vbogn"]
+[ext_resource type="Script" uid="uid://b6cm2j1isam0e" path="res://scripts/minigames/crusher_minigame.gd" id="3_d5kir"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e73ws"]
 size = Vector2(43, 87)
+
+[sub_resource type="PackedScene" id="PackedScene_plvai"]
+_bundled = {
+"conn_count": 0,
+"conns": PackedInt32Array(),
+"editable_instances": [],
+"names": PackedStringArray("CrusherMinigame", "Panel", "offset_right", "offset_bottom", "script", "metadata/_custom_type_script"),
+"node_count": 1,
+"node_paths": [],
+"nodes": PackedInt32Array(-1, -1, 1, 0, -1, 4, 2, 0, 3, 1, 4, 2, 5, 3, 0),
+"variants": [40.0, 40.0, ExtResource("3_d5kir"), "uid://xprspyc1fnnd"],
+"version": 3
+}
 
 [node name="LevelTest" type="Node2D"]
 
@@ -29,3 +43,4 @@ shape = SubResource("RectangleShape2D_e73ws")
 
 [node name="MinigameArea" parent="." instance=ExtResource("2_vbogn")]
 position = Vector2(209, 54)
+minigameScene = SubResource("PackedScene_plvai")
