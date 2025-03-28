@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://crflvlg6vguy4"]
+
+[ext_resource type="Script" uid="uid://dnw8av1sh0o6a" path="res://scripts/minigames/coffee_bean.gd" id="1_ykgka"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_r4mlq"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_r4mlq"]
+
+[node name="CoffeeBean" type="Control"]
+top_level = true
+z_index = 3
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_ykgka")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+position = Vector2(0.5, 0)
+scale = Vector2(21, 16)
+texture = SubResource("PlaceholderTexture2D_r4mlq")
+
+[node name="Area" type="Area2D" parent="."]
+collision_layer = 8
+collision_mask = 8
+
+[node name="CollisionShape" type="CollisionShape2D" parent="Area"]
+rotation = -1.5708
+scale = Vector2(0.848563, 0.848563)
+shape = SubResource("CapsuleShape2D_r4mlq")
+
+[connection signal="input_event" from="Area" to="." method="_on_area_input_event"]
+[connection signal="mouse_entered" from="Area" to="." method="_on_area_mouse_entered"]
+[connection signal="mouse_exited" from="Area" to="." method="_on_area_mouse_exited"]
